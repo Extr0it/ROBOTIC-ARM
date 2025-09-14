@@ -1,0 +1,16 @@
+#include <Servo.h>
+Servo servo;
+
+void setup() {
+  servo.attach(9);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available() >= 2) {
+    int canal = Serial.read();   // primul byte = canal
+    int unghi = Serial.read();   // al doilea byte = unghi (0–180)
+    
+    servo.write(unghi);  // aici Arduino converteste unghiul in PWM corect
+  }
+}
