@@ -1,6 +1,6 @@
 Am realizat un braț robotic cu 6 grade de libertate, proiectat
 parțial de mine în Fusion 360 și controlat printr-o interfață
-grafică personalizată. 
+grafică personalizată, astfel robotul poate sa fie controlat direct din MOUSE, fara sa fie ATINS.
 
 Structura mecanică este construită
 modular, iar mișcarea este asigurată de 6 servo-motoare: 3
